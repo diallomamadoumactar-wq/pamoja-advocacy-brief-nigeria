@@ -1,0 +1,1084 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Reconsidering Nigeria's Restrictive Abortion Laws — Pamoja Advocacy Brief</title>
+<meta name="description" content="A public health, human rights, and legislative imperative. An advocacy brief from Pamoja for CSO partners, internal teams, and creative agencies.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,700;9..144,900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --purple:        #49267A;
+  --purple-deep:  #2B1556;
+  --purple-darker:#180828;
+  --yellow:        #F8C501;
+  --pink:          #E62B67;
+  --pink-deep:    #B8204F;
+  --black:         #0A0810;
+  --cream:         #FBF6EE;
+  --ink:           #1A1124;
+  --muted:         #6F6582;
+  --line:          rgba(255,255,255,0.10);
+  --line-dark:     rgba(0,0,0,0.10);
+
+  --display: "Fraunces", "Times New Roman", serif;
+  --sans: "DM Sans", system-ui, -apple-system, sans-serif;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--black);
+  color: white;
+  font-family: var(--sans);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; display: block; }
+
+/* ============ NAV ============ */
+nav.top {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 18px 32px;
+  background: rgba(10,8,16,0.72);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border-bottom: 1px solid var(--line);
+}
+nav.top .brand { display: flex; align-items: center; gap: 12px; }
+nav.top .brand svg { height: 34px; width: auto; }
+nav.top ul {
+  display: flex; gap: 28px; list-style: none; padding: 0; margin: 0;
+  font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 500;
+}
+nav.top a:hover { color: var(--yellow); }
+nav.top ul a { transition: color .2s; }
+nav.top .cta {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--pink); color: white; padding: 10px 16px;
+  border-radius: 999px; font-size: 12px; font-weight: 600;
+  letter-spacing: 0.06em; text-transform: uppercase;
+  transition: background .2s, transform .2s;
+}
+nav.top .cta:hover { background: var(--pink-deep); transform: translateY(-1px); }
+@media (max-width: 900px) {
+  nav.top { padding: 14px 20px; }
+  nav.top ul { display: none; }
+}
+
+/* ============ HERO ============ */
+.hero {
+  min-height: 100vh;
+  background: var(--purple);
+  position: relative; overflow: hidden;
+  padding: 120px 32px 80px;
+  display: flex; flex-direction: column; justify-content: center;
+}
+.hero::before {
+  content: ""; position: absolute; inset: 0;
+  background:
+    radial-gradient(circle at 80% 20%, rgba(248,197,1,0.25), transparent 40%),
+    radial-gradient(circle at 10% 90%, rgba(230,43,103,0.20), transparent 40%);
+  pointer-events: none;
+}
+.hero .star {
+  position: absolute; right: -120px; top: -100px; width: 600px; height: 600px;
+  opacity: 0.5; pointer-events: none;
+  animation: spin 80s linear infinite;
+}
+.hero .container { position: relative; max-width: 1200px; margin: 0 auto; width: 100%; }
+.hero .eyebrow {
+  display: inline-flex; align-items: center; gap: 12px;
+  font-size: 11px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--yellow); margin-bottom: 32px;
+}
+.hero .eyebrow .dot { width: 8px; height: 8px; background: var(--yellow); border-radius: 50%; animation: pulse 2s infinite; }
+.hero h1 {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: clamp(44px, 7vw, 96px);
+  line-height: 0.97;
+  letter-spacing: -0.02em;
+  margin: 0 0 32px;
+  color: white;
+  font-variation-settings: "opsz" 144;
+  max-width: 1100px;
+}
+.hero h1 .ital { font-style: italic; font-weight: 500; color: var(--yellow); }
+.hero .lede {
+  font-family: var(--display);
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(20px, 2.2vw, 30px);
+  line-height: 1.35;
+  max-width: 720px;
+  color: rgba(255,255,255,0.88);
+  margin: 0 0 48px;
+}
+.hero .meta {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 32px; margin-top: 60px;
+  border-top: 1px solid rgba(255,255,255,0.18);
+  padding-top: 32px; max-width: 900px;
+}
+.hero .meta dt { font-size: 10px; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: var(--yellow); margin-bottom: 6px; }
+.hero .meta dd { margin: 0; font-size: 14px; color: white; font-weight: 500; }
+
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.3; } }
+
+/* ============ AUDIENCE FILTER ============ */
+.audience-bar {
+  background: var(--purple-darker);
+  padding: 32px;
+  border-bottom: 1px solid var(--line);
+  position: sticky; top: 70px; z-index: 50;
+}
+.audience-bar .inner {
+  max-width: 1200px; margin: 0 auto;
+  display: flex; align-items: center; gap: 20px; flex-wrap: wrap;
+}
+.audience-bar .label {
+  font-size: 11px; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase;
+  color: rgba(255,255,255,0.6);
+}
+.audience-bar .pills { display: flex; gap: 10px; flex-wrap: wrap; }
+.audience-bar button {
+  border: 1px solid rgba(255,255,255,0.20);
+  background: transparent;
+  color: white; font-family: var(--sans); font-size: 13px; font-weight: 500;
+  padding: 9px 18px; border-radius: 999px; cursor: pointer;
+  transition: all .2s;
+  letter-spacing: 0.02em;
+}
+.audience-bar button:hover { border-color: var(--yellow); color: var(--yellow); }
+.audience-bar button.active {
+  background: var(--yellow); color: var(--purple-darker); border-color: var(--yellow);
+  font-weight: 700;
+}
+.audience-bar .hint {
+  font-size: 12px; color: rgba(255,255,255,0.55); margin-left: auto;
+  font-style: italic;
+}
+@media (max-width: 700px) {
+  .audience-bar { top: 64px; padding: 18px; }
+  .audience-bar .hint { display: none; }
+}
+
+/* ============ AUDIENCE-AWARE CALLOUTS ============ */
+.audience-callout {
+  display: none;
+  margin: 32px 0;
+  padding: 20px 24px;
+  border-left: 3px solid var(--yellow);
+  background: rgba(248,197,1,0.08);
+  font-size: 14px;
+  border-radius: 0 6px 6px 0;
+}
+.audience-callout strong {
+  display: block; font-size: 11px; font-weight: 700;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--yellow); margin-bottom: 8px;
+}
+body[data-audience="cso"] .audience-callout.cso { display: block; }
+body[data-audience="team"] .audience-callout.team { display: block; }
+body[data-audience="creative"] .audience-callout.creative { display: block; }
+
+/* ============ SECTIONS ============ */
+section {
+  padding: 110px 32px;
+  position: relative;
+  scroll-margin-top: 130px;
+}
+section .container { max-width: 1200px; margin: 0 auto; }
+section.dark { background: var(--purple-darker); }
+section.darker { background: var(--black); }
+section.purple { background: var(--purple); }
+section.cream { background: var(--cream); color: var(--ink); }
+section.pink { background: var(--pink); }
+section.yellow { background: var(--yellow); color: var(--purple-deep); }
+section.yellow h2 { color: var(--purple-deep); }
+section.yellow h3 { color: var(--purple-deep); }
+section.yellow .country .head .name { color: var(--purple-deep); }
+section.yellow .country h4 { color: var(--purple-deep); }
+section.yellow .country p { color: rgba(43,21,86,0.85); }
+section.yellow .country .head .tag { color: var(--pink-deep); }
+section.yellow .country { background: rgba(43,21,86,0.08); border-color: rgba(43,21,86,0.15); }
+section.yellow .country:hover { background: rgba(43,21,86,0.12); border-color: var(--purple-deep); }
+section.cream h2 { color: var(--purple-deep); }
+section.cream h3 { color: var(--purple-deep); }
+
+.kicker {
+  display: flex; align-items: baseline; gap: 18px;
+  font-size: 11px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--pink);
+  margin-bottom: 24px;
+}
+.kicker::before {
+  content: ""; display: inline-block; width: 32px; height: 2px; background: var(--pink);
+  position: relative; top: -3px;
+}
+section.cream .kicker { color: var(--pink); }
+section.cream .kicker::before { background: var(--pink); }
+section.yellow .kicker { color: var(--purple-deep); }
+section.yellow .kicker::before { background: var(--purple-deep); }
+section.pink .kicker { color: var(--yellow); }
+section.pink .kicker::before { background: var(--yellow); }
+
+h2 {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: clamp(36px, 5.5vw, 68px);
+  line-height: 1.0;
+  letter-spacing: -0.02em;
+  margin: 0 0 28px;
+  font-variation-settings: "opsz" 144;
+  max-width: 1000px;
+}
+h2 .ital { font-style: italic; font-weight: 500; }
+
+h3 {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: clamp(22px, 2.4vw, 30px);
+  line-height: 1.18;
+  letter-spacing: -0.01em;
+  margin: 0 0 14px;
+  font-variation-settings: "opsz" 96;
+}
+
+.section-lede {
+  font-family: var(--display);
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(18px, 2vw, 24px);
+  line-height: 1.4;
+  max-width: 800px;
+  color: rgba(255,255,255,0.78);
+  margin: 0 0 56px;
+}
+section.cream .section-lede { color: var(--muted); }
+section.yellow .section-lede { color: rgba(43,21,86,0.78); }
+
+p { font-size: 16px; line-height: 1.6; color: rgba(255,255,255,0.78); }
+section.cream p { color: var(--muted); }
+section.yellow p { color: rgba(43,21,86,0.85); }
+
+/* ============ STATS GRID ============ */
+.stats {
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  gap: 1px; background: var(--line);
+  border: 1px solid var(--line);
+  margin: 48px 0 24px;
+}
+.stat {
+  background: var(--black);
+  padding: 40px 28px;
+  position: relative;
+  transition: background .3s;
+}
+.stat:hover { background: var(--purple-darker); }
+.stat .num {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: clamp(48px, 6vw, 84px);
+  line-height: 1;
+  letter-spacing: -0.04em;
+  margin-bottom: 12px;
+  font-variation-settings: "opsz" 144;
+}
+.stat:nth-child(1) .num { color: var(--pink); }
+.stat:nth-child(2) .num { color: var(--yellow); }
+.stat:nth-child(3) .num { color: white; }
+.stat:nth-child(4) .num { color: var(--pink); }
+.stat .label {
+  font-size: 11px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase;
+  color: white; margin-bottom: 12px;
+}
+.stat .desc { font-size: 13px; color: rgba(255,255,255,0.65); line-height: 1.5; }
+.stat .source { margin-top: 14px; font-size: 11px; color: rgba(255,255,255,0.4); font-style: italic; }
+@media (max-width: 900px) { .stats { grid-template-columns: repeat(2,1fr); } }
+@media (max-width: 500px) { .stats { grid-template-columns: 1fr; } }
+
+/* ============ TWO-COLUMN ============ */
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
+@media (max-width: 800px) { .two-col { grid-template-columns: 1fr; gap: 32px; } }
+
+/* ============ PULLQUOTE ============ */
+.pullquote {
+  position: relative;
+  background: var(--purple);
+  padding: 48px 40px 40px;
+  border-left: 4px solid var(--yellow);
+  margin: 32px 0;
+}
+.pullquote::before {
+  content: "\201C";
+  font-family: var(--display);
+  font-size: 140px;
+  line-height: 0.7;
+  color: var(--yellow);
+  position: absolute;
+  top: 24px; left: 28px;
+  opacity: 0.25;
+}
+.pullquote p {
+  font-family: var(--display);
+  font-style: italic;
+  font-size: clamp(20px, 2.2vw, 28px);
+  line-height: 1.35;
+  color: white;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
+.pullquote .attr {
+  margin-top: 20px;
+  font-family: var(--sans);
+  font-style: normal;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--yellow);
+  font-weight: 600;
+}
+
+/* ============ COMPARISON LIST ============ */
+.compare-block {
+  background: var(--ink);
+  padding: 32px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+}
+.compare-block.policy { border-left: 4px solid var(--yellow); }
+.compare-block.code { border-left: 4px solid var(--pink); background: linear-gradient(135deg, var(--purple-deep), var(--purple)); }
+.compare-block h4 {
+  font-size: 11px; font-weight: 700; letter-spacing: 0.12em;
+  text-transform: uppercase; margin: 0 0 18px;
+  color: var(--yellow);
+}
+.compare-block.code h4 { color: var(--yellow); }
+.compare-block.policy h4 { color: var(--pink); }
+.compare-block ul { list-style: none; padding: 0; margin: 0; }
+.compare-block ul li {
+  padding: 14px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgba(255,255,255,0.85);
+  display: flex; gap: 12px;
+}
+.compare-block ul li:last-child { border-bottom: 0; }
+.compare-block ul li::before {
+  content: ""; flex-shrink: 0; width: 6px; height: 6px;
+  background: var(--yellow); border-radius: 50%;
+  margin-top: 9px;
+}
+.compare-block.policy ul li::before { background: var(--pink); }
+
+/* ============ COUNTRY CARDS ============ */
+.countries {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 40px;
+}
+.countries .full { grid-column: 1 / -1; }
+.country {
+  background: var(--purple-deep);
+  border: 1px solid var(--line);
+  padding: 32px;
+  position: relative;
+  overflow: hidden;
+  transition: transform .3s, border-color .3s;
+}
+.country:hover { transform: translateY(-4px); border-color: var(--yellow); }
+.country .head {
+  display: flex; justify-content: space-between; align-items: baseline;
+  margin-bottom: 8px; padding-bottom: 16px;
+  border-bottom: 1px solid var(--line);
+}
+.country .head .name {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 28px;
+  letter-spacing: -0.01em;
+  color: var(--yellow);
+}
+.country .full .head .name { font-size: 22px; }
+.country .head .tag {
+  font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--pink); font-weight: 600;
+}
+.country h4 {
+  font-family: var(--display); font-style: italic; font-weight: 500;
+  font-size: 18px; margin: 18px 0 10px; color: white;
+}
+.country p { font-size: 14px; color: rgba(255,255,255,0.78); margin: 0; }
+@media (max-width: 800px) { .countries { grid-template-columns: 1fr; } }
+
+/* ============ ACTIONS GRID ============ */
+.actions {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+  margin-top: 40px;
+}
+.action {
+  background: var(--cream);
+  padding: 32px;
+  position: relative;
+  border-top: 4px solid var(--pink);
+  transition: transform .3s;
+}
+.action:hover { transform: translateY(-4px); }
+.action .num {
+  font-family: var(--display); font-weight: 700;
+  font-size: 56px; line-height: 1; letter-spacing: -0.04em;
+  color: var(--pink); margin-bottom: 18px;
+  font-variation-settings: "opsz" 144;
+}
+.action p { color: var(--purple-deep); font-weight: 500; font-size: 15px; margin: 0; line-height: 1.5; }
+@media (max-width: 900px) { .actions { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 600px) { .actions { grid-template-columns: 1fr; } }
+
+/* ============ RIGHTS GRID ============ */
+.rights {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px;
+  margin-top: 40px;
+  background: var(--line);
+  border: 1px solid var(--line);
+}
+.right-card {
+  background: var(--purple-deep);
+  padding: 36px 28px;
+}
+.right-card .num {
+  font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--yellow); margin-bottom: 14px;
+}
+.right-card h4 {
+  font-family: var(--display); font-weight: 600; font-size: 24px;
+  letter-spacing: -0.01em; color: white; margin: 0 0 14px;
+}
+.right-card p { font-size: 14px; color: rgba(255,255,255,0.78); margin: 0; }
+.right-card.violations { background: var(--pink); }
+.right-card.violations .num { color: var(--yellow); }
+.right-card.violations h4 { color: white; }
+.right-card.violations ul {
+  list-style: none; padding: 0; margin: 0;
+  font-size: 13px; color: white;
+}
+.right-card.violations ul li {
+  padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.18);
+  display: flex; align-items: center; gap: 10px;
+}
+.right-card.violations ul li::before {
+  content: "✦"; color: var(--yellow); font-size: 12px;
+}
+.right-card.violations ul li:last-child { border-bottom: 0; }
+@media (max-width: 800px) { .rights { grid-template-columns: 1fr; } }
+
+/* ============ VISION LIST ============ */
+.vision {
+  list-style: none; padding: 0; margin: 40px 0 0;
+}
+.vision li {
+  padding: 22px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+  display: flex; gap: 24px; align-items: baseline;
+}
+.vision li::before {
+  content: "✦";
+  color: var(--yellow);
+  font-size: 22px;
+  flex-shrink: 0;
+}
+.vision li span {
+  font-family: var(--display);
+  font-weight: 500;
+  font-size: clamp(20px, 2.5vw, 30px);
+  line-height: 1.2;
+  color: white;
+  letter-spacing: -0.01em;
+}
+
+/* ============ DOWNLOADS ============ */
+.downloads {
+  background: var(--ink);
+  border: 1px solid var(--line);
+  padding: 40px;
+  margin-top: 56px;
+  display: grid; grid-template-columns: 1fr auto;
+  gap: 32px; align-items: center;
+}
+.downloads h3 { color: white; margin: 0 0 8px; }
+.downloads p { margin: 0; font-size: 14px; }
+.downloads .btn {
+  background: var(--pink); color: white;
+  padding: 16px 28px; border-radius: 4px;
+  font-weight: 600; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase;
+  display: inline-flex; align-items: center; gap: 12px;
+  transition: all .2s;
+}
+.downloads .btn:hover { background: var(--pink-deep); transform: translateY(-2px); }
+@media (max-width: 700px) { .downloads { grid-template-columns: 1fr; } }
+
+/* ============ FOOTER ============ */
+footer {
+  background: var(--black);
+  border-top: 1px solid var(--line);
+  padding: 56px 32px 32px;
+  font-size: 13px;
+  color: rgba(255,255,255,0.55);
+}
+footer .container {
+  max-width: 1200px; margin: 0 auto;
+  display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 48px;
+}
+footer .brand-block svg { height: 44px; margin-bottom: 16px; }
+footer .brand-block p { font-size: 13px; color: rgba(255,255,255,0.55); margin: 0; max-width: 380px; }
+footer h5 {
+  font-size: 11px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--yellow); margin: 0 0 16px;
+}
+footer ul { list-style: none; padding: 0; margin: 0; }
+footer ul li { padding: 4px 0; }
+footer ul li a:hover { color: var(--yellow); }
+footer .legal {
+  margin-top: 48px; padding-top: 24px;
+  border-top: 1px solid var(--line);
+  display: flex; justify-content: space-between; flex-wrap: wrap; gap: 16px;
+  font-size: 11px; letter-spacing: 0.05em; color: rgba(255,255,255,0.4);
+  max-width: 1200px; margin-left: auto; margin-right: auto;
+}
+@media (max-width: 800px) { footer .container { grid-template-columns: 1fr; } }
+
+/* ============ MISC ============ */
+.tagline {
+  font-family: var(--display);
+  font-style: italic;
+  font-weight: 500;
+  font-size: clamp(28px, 4vw, 56px);
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: var(--yellow);
+  margin: 32px 0;
+  max-width: 900px;
+}
+.divider-section { padding: 80px 32px; text-align: center; }
+.section-num {
+  font-family: var(--display); font-weight: 700;
+  font-size: 14px; letter-spacing: 0.18em;
+  color: var(--yellow); margin-bottom: 16px;
+}
+
+/* fade-in on scroll — only when JS adds the class */
+.js .reveal { opacity: 0; transform: translateY(20px); transition: opacity .7s, transform .7s; }
+.js .reveal.in { opacity: 1; transform: none; }
+</style>
+</head>
+<body data-audience="all">
+
+<!-- ============ NAV ============ -->
+<nav class="top">
+  <div class="brand">
+    <svg viewBox="0 0 420 130" xmlns="http://www.w3.org/2000/svg" aria-label="Pamoja">
+      <g transform="translate(15,18)">
+        <path d="M 30 8 C 22 8, 16 14, 16 22 C 14 28, 16 34, 20 38 L 22 48 C 22 54, 26 58, 28 64 L 32 72 C 34 78, 36 82, 40 84 C 44 86, 48 84, 50 80 L 52 72 C 54 66, 54 60, 52 54 C 56 50, 58 44, 60 38 C 62 32, 60 26, 58 20 C 54 12, 46 8, 38 8 Z"
+              fill="none" stroke="#E62B67" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
+        <ellipse cx="60" cy="68" rx="3" ry="6.5" fill="none" stroke="#F8C501" stroke-width="2.8" transform="rotate(15 60 68)"/>
+        <path d="M 80 15 L 84 26 L 95 30 L 84 34 L 80 45 L 76 34 L 65 30 L 76 26 Z" fill="#E62B67"/>
+      </g>
+      <text x="125" y="85" font-family="DM Sans, sans-serif" font-weight="700" font-size="68" fill="#E62B67" letter-spacing="-2">Pamoja</text>
+    </svg>
+  </div>
+  <ul>
+    <li><a href="#crossroads">Crossroads</a></li>
+    <li><a href="#implications">Implications</a></li>
+    <li><a href="#human-cost">Human Cost</a></li>
+    <li><a href="#africa">Africa</a></li>
+    <li><a href="#rights">Rights</a></li>
+    <li><a href="#path">Path Forward</a></li>
+  </ul>
+  <a href="#downloads" class="cta">Download Brief</a>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <svg class="star" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <path d="M 100 0 C 102 60, 140 98, 200 100 C 140 102, 102 140, 100 200 C 98 140, 60 102, 0 100 C 60 98, 98 60, 100 0 Z" fill="#F8C501"/>
+  </svg>
+  <div class="container">
+    <div class="eyebrow"><span class="dot"></span> Advocacy Brief · Nigeria · 2026</div>
+    <h1>Reconsidering Nigeria's <span class="ital">restrictive</span> abortion laws.</h1>
+    <p class="lede">A public health, human rights, and legislative imperative — at a defining moment in the National Assembly.</p>
+    <dl class="meta">
+      <div><dt>For</dt><dd>CSO partners · Pamoja team · Creative agencies</dd></div>
+      <div><dt>Produced by</dt><dd>Pamoja</dd></div>
+      <div><dt>Format</dt><dd>Web brief + Strategic deck</dd></div>
+      <div><dt>Use</dt><dd>Briefing, advocacy, creative work</dd></div>
+    </dl>
+  </div>
+</header>
+
+<!-- ============ AUDIENCE FILTER ============ -->
+<div class="audience-bar">
+  <div class="inner">
+    <div class="label">Read as</div>
+    <div class="pills">
+      <button data-aud="all" class="active">Everyone</button>
+      <button data-aud="cso">CSO partner</button>
+      <button data-aud="team">Pamoja team</button>
+      <button data-aud="creative">Creative agency</button>
+    </div>
+    <div class="hint">Switching highlights what matters most to that role.</div>
+  </div>
+</div>
+
+<!-- ============ SECTION 01: A NATION AT A CROSSROADS ============ -->
+<section id="crossroads" class="darker">
+  <div class="container reveal">
+    <div class="kicker"><span>Part 01 — A Nation at a Crossroads</span></div>
+    <h2>Nigeria stands at a <span class="ital">defining moment</span> in its legislative history.</h2>
+    <p class="section-lede">Recent debates concerning amendments to the Criminal Code — particularly the now-suspended Senate clause proposing increased penalties for abortion — signal a long-overdue national reckoning.</p>
+
+    <div class="two-col">
+      <div>
+        <p>Millions of Nigerian women and girls grapple every year with unwanted pregnancies, sexual violence, and the crushing weight of socio-economic hardship. Yet the law offers them no humane, modern, or effective pathway to care.</p>
+        <p>The current legal framework — principally <strong style="color: white;">Sections 228, 229 and 230 of the Criminal Code</strong> — criminalises abortion except to save a woman's life. These provisions were inherited from colonial statutes written over a century ago, with no scientific or public health basis.</p>
+        <p>They stand in direct contradiction to Nigeria's own federal and national policy commitments on maternal and public health: the National Reproductive Health Policy, the National Gender Policy, the Family Planning Blueprint 2020–2024, the FP2030 Commitment, and the National Guidelines on Safe Termination of Pregnancy for Legal Indications (FMOH, 2018).</p>
+      </div>
+      <div>
+        <div class="pullquote">
+          <p>The world is changing. African nations are reforming. The evidence is overwhelming. The lives and futures of Nigerian women depend on legislators choosing progress over fear, science over stigma, and compassion over criminalisation.</p>
+          <div class="attr">The legislative case · Pamoja</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="audience-callout cso">
+      <strong>For CSO partners</strong>
+      Lead with the <em>judicial shift</em>, not the political controversy. The RJIF v. AGF ruling is your most powerful new argument — it reframes the conversation away from morality toward constitutional consistency. Anchor every conversation with policymakers in this judicial reality.
+    </div>
+    <div class="audience-callout team">
+      <strong>For the Pamoja team</strong>
+      The narrative spine: <em>colonial laws + judicial shift + national policy contradiction</em>. Make sure every partner can repeat this triangle. It is the line that holds the coalition together and prevents drift into confrontational framing.
+    </div>
+    <div class="audience-callout creative">
+      <strong>For creative agencies</strong>
+      "A nation at a crossroads" is your hero territory — moments of choice, civic responsibility, the weight of inherited systems versus the urgency of now. Avoid the legalistic register; build from human truth.
+    </div>
+
+    <div class="downloads" style="margin-top: 80px;">
+      <div>
+        <h3>The Judicial Shift — Landmark Decision</h3>
+        <p>Reproductive Justice Initiative Foundation (RJIF) v. Attorney General of the Federation: the Federal High Court affirmed that forcing a survivor of rape, incest, or sexual violence to carry an unplanned pregnancy constitutes a violation of her fundamental rights to physical and mental health.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SECTION 02: IMPLICATIONS ============ -->
+<section id="implications" class="dark">
+  <div class="container reveal">
+    <div class="kicker"><span>Part 02 — Implications of Restrictive Laws</span></div>
+    <h2>Nigeria's laws don't prevent abortions. <span class="ital">They prevent safe ones.</span></h2>
+    <p class="section-lede">The Senate's recent debates revealed the depth of internal conflict among lawmakers. The implications of maintaining the status quo are grave.</p>
+
+    <div class="stats">
+      <div class="stat">
+        <div class="num">1.2M+</div>
+        <div class="label">Abortions per year</div>
+        <div class="desc">Most performed clandestinely, in unsafe conditions.</div>
+        <div class="source">National estimates</div>
+      </div>
+      <div class="stat">
+        <div class="num">29</div>
+        <div class="label">Per 1,000 women</div>
+        <div class="desc">Annual incidence rate among women aged 15–49.</div>
+        <div class="source">FMOH</div>
+      </div>
+      <div class="stat">
+        <div class="num">512</div>
+        <div class="label">Maternal deaths / 100K live births</div>
+        <div class="desc">One of the highest maternal mortality ratios in the world.</div>
+        <div class="source">WHO</div>
+      </div>
+      <div class="stat">
+        <div class="num">61K</div>
+        <div class="label">Women die each year</div>
+        <div class="desc">From complications of unsafe abortions or unintended pregnancy.</div>
+        <div class="source">FMOH / WHO estimates</div>
+      </div>
+    </div>
+
+    <h3 style="margin-top: 80px; color: white;">The contradiction at the heart of Nigerian health policy.</h3>
+    <p style="max-width: 700px; margin-bottom: 40px;">In the last decade, Nigeria's Ministry of Health has taken bold, progressive steps to strengthen reproductive health. The Criminal Code undermines every one of them.</p>
+
+    <div class="two-col">
+      <div class="compare-block policy">
+        <h4>What FMOH has built</h4>
+        <ul>
+          <li>National Guidelines on Safe Termination of Pregnancy for Legal Indications (2018) — recognising abortion as a legitimate medical intervention.</li>
+          <li>Nigeria Family Planning Blueprint (2020–2024) — emphasising reduction of unintended pregnancies as a national priority.</li>
+          <li>National Gender Policy (2021–2026) — mandating elimination of discrimination against women.</li>
+          <li>FP2030 Commitment — ensuring equitable access to reproductive health services for all.</li>
+          <li>National Reproductive Health Policy (2017) — highlighting the reduction of unsafe abortion as a core strategic objective.</li>
+        </ul>
+      </div>
+      <div class="compare-block code">
+        <h4>What the Criminal Code does</h4>
+        <ul>
+          <li>Exposes health workers to arrest, investigation or prosecution — even when acting within accepted medical standards.</li>
+          <li>Creates a climate of fear among providers, discouraging timely interventions and undermining the implementation of national reproductive health guidelines.</li>
+          <li>Has produced documented cases of providers arrested or detained for alleged involvement in abortion-related procedures, even in medically complex situations.</li>
+          <li>Forces women into secrecy, unsafe procedures, and the hands of unqualified providers.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="audience-callout cso">
+      <strong>For CSO partners</strong>
+      The "law vs. policy" frame is non-confrontational and hard to refute. It positions reform as <em>institutional coherence</em> — finishing what the executive has already started — rather than as a values battle. Use this in committee hearings.
+    </div>
+    <div class="audience-callout team">
+      <strong>For the Pamoja team</strong>
+      Cite Punch (2023) and The Guardian Nigeria (2024) on provider arrests — these are concrete, verifiable, recent. They turn an abstract argument into a specific failure of governance.
+    </div>
+    <div class="audience-callout creative">
+      <strong>For creative agencies</strong>
+      The 4 stat cards are visual gold. "1.2 million abortions a year, most unsafe" lands harder than any rhetoric. Lead with numbers, then humanise.
+    </div>
+  </div>
+</section>
+
+<!-- ============ SECTION 03: HUMAN COST ============ -->
+<section id="human-cost" class="darker">
+  <div class="container reveal">
+    <div class="kicker"><span>Part 03 — The Human Cost</span></div>
+    <h2>Each statistic is a <span class="ital">mother, daughter, student, farmer, or trader.</span></h2>
+    <p class="section-lede">A Nigerian woman or girl with dreams and responsibilities. The professional community is unified: this is a national public health emergency.</p>
+
+    <div class="pullquote" style="margin: 40px 0 56px;">
+      <p>Survivors describe being driven to unregulated providers where procedures were carried out without anaesthesia, proper equipment, or medical oversight — suffering life-threatening infections, internal injuries, or prolonged bleeding before seeking help.</p>
+      <div class="attr">ICIR (2025) · The Guardian Nigeria (2024)</div>
+    </div>
+
+    <h3 style="color: white;">The patterns that emerge</h3>
+    <div class="two-col" style="margin-top: 28px;">
+      <div>
+        <div class="compare-block" style="border-left: 4px solid var(--pink);">
+          <h4 style="color: var(--pink);">Five recurring patterns</h4>
+          <ul>
+            <li><strong style="color: white;">Lack of access to contraception</strong> — due to cost, stigma, or partner opposition.</li>
+            <li><strong style="color: white;">Fear of prosecution</strong> — preventing women from seeking safe care.</li>
+            <li><strong style="color: white;">Sexual violence</strong> — common across Nigeria, leaving young girls pregnant and unsupported.</li>
+            <li><strong style="color: white;">Economic hardship</strong> — forcing married women into clandestine abortions.</li>
+            <li><strong style="color: white;">Deadly improvisation</strong> — by untrained providers — sepsis, haemorrhage, infertility.</li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div class="compare-block" style="border-left: 4px solid var(--yellow);">
+          <h4 style="color: var(--yellow);">The expert consensus</h4>
+          <ul>
+            <li><strong style="color: white;">Most deaths are preventable.</strong> Most deaths and complications linked to unsafe abortion would decline sharply if safe, regulated services were legally accessible.</li>
+            <li><strong style="color: white;">Restrictions empower untrained providers.</strong> Current legal restrictions empower untrained providers, fuel clandestine procedures, and worsen maternal mortality.</li>
+            <li><strong style="color: white;">Reform is a national emergency.</strong> Senior clinicians describe the situation as a national public health emergency. Reform is essential, not optional.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="audience-callout cso">
+      <strong>For CSO partners</strong>
+      When you speak to legislators, name the categories — survivors of rape, adolescent girls, married women in poverty, healthcare workers under threat. Abstraction is your enemy. Specificity is your friend.
+    </div>
+    <div class="audience-callout team">
+      <strong>For the Pamoja team</strong>
+      Hold the line on <em>tone</em>. The human cost section is the most emotionally charged — but it must remain dignified, never sensational. Survivors are protagonists, not victims.
+    </div>
+    <div class="audience-callout creative">
+      <strong>For creative agencies</strong>
+      This is your strongest creative territory. The 5 patterns above are 5 stories waiting to be told. Build from survivor truth — but always with consent, always with dignity, never extractive.
+    </div>
+  </div>
+</section>
+
+<!-- ============ SECTION 04: AFRICAN MOMENTUM ============ -->
+<section id="africa" class="yellow">
+  <div class="container reveal">
+    <div class="kicker"><span>Part 04 — The World Is Moving Forward</span></div>
+    <h2>Nigeria is not alone — but it is increasingly <span class="ital">behind.</span></h2>
+    <p class="section-lede">African nations have already recognised the humanitarian and public health consequences of restrictive laws — and acted. Nigeria's neighbours are leading.</p>
+
+    <div class="countries">
+      <div class="country">
+        <div class="head">
+          <div class="name">Benin</div>
+          <div class="tag">2021 · Comprehensive reform</div>
+        </div>
+        <h4>Right to choose, broadly defined.</h4>
+        <p>Benin amended its law to allow abortion in cases of rape, incest, fetal abnormality, risk to the woman's health — and importantly, when pregnancy causes psychological or socio-economic distress. The parliament recognised the realities Nigerian women face daily.</p>
+      </div>
+      <div class="country">
+        <div class="head">
+          <div class="name">Malawi</div>
+          <div class="tag">Court ruling</div>
+        </div>
+        <h4>The right to health is the right to life.</h4>
+        <p>Malawi's High Court ruled that women's right to health and freedom from cruel, inhuman, and degrading treatment require liberalising abortion laws. The court emphasised that maternal death from unsafe abortion is a violation of the right to life — a ruling that mirrors Nigeria's binding human rights obligations.</p>
+      </div>
+      <div class="country full">
+        <div class="head">
+          <div class="name">Ethiopia · Mozambique · Cape Verde · South Africa · Rwanda</div>
+          <div class="tag">Progressive reform</div>
+        </div>
+        <h4>Measurable, documented results.</h4>
+        <p>These countries have adopted progressive abortion laws that led to <strong>drastic reductions in unsafe abortion</strong>, <strong>improved maternal survival</strong>, and <strong>fewer hospital admissions due to complications</strong>. Nigeria should not lag behind the rest of Africa in protecting its own citizens.</p>
+      </div>
+    </div>
+
+    <p class="tagline">Five African nations have shown the path. Nigeria's daughters deserve the same.</p>
+
+    <div class="audience-callout cso">
+      <strong>For CSO partners</strong>
+      The African comparator argument is your strongest external proof point. It defuses the "Western imposition" critique that opponents of reform reach for first. Lead Benin and Malawi when you speak with senators.
+    </div>
+    <div class="audience-callout team">
+      <strong>For the Pamoja team</strong>
+      Maintain a current, well-sourced fact sheet on each comparator country. As reforms advance elsewhere, our argument strengthens. Update quarterly.
+    </div>
+    <div class="audience-callout creative">
+      <strong>For creative agencies</strong>
+      "Africa is moving — Nigeria should lead, not lag" is a strong narrative pillar. Pan-African momentum, not isolation, is the emotional throughline.
+    </div>
+  </div>
+</section>
+
+<!-- ============ SECTION 05: HUMAN RIGHTS ============ -->
+<section id="rights" class="darker">
+  <div class="container reveal">
+    <div class="kicker"><span>Part 05 — Human Rights Obligations</span></div>
+    <h2>Nigeria's binding human rights commitments — <span class="ital">already in force.</span></h2>
+    <p class="section-lede">Nigeria domesticated the African Charter on Human and Peoples' Rights in 1983 (Cap. A9, LFN 2004). Its provisions are enforceable. Its obligations are binding.</p>
+
+    <div class="rights">
+      <div class="right-card">
+        <div class="num">Article 16</div>
+        <h4>Right to Health</h4>
+        <p>The right to the best attainable state of physical and mental health. Nigeria must take measures to protect the health of its people.</p>
+      </div>
+      <div class="right-card">
+        <div class="num">Article 18(3)</div>
+        <h4>Women's Rights</h4>
+        <p>Elimination of discrimination against women and protection of women's rights. When women die preventable deaths from unsafe abortions, the State is in breach.</p>
+      </div>
+      <div class="right-card violations">
+        <div class="num">Rights violated</div>
+        <h4>Abortion restrictions violate:</h4>
+        <ul>
+          <li>Right to life</li>
+          <li>Right to health</li>
+          <li>Right to dignity</li>
+          <li>Right to freedom from discrimination</li>
+          <li>Right to be free from cruel, inhuman, degrading treatment</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="pullquote" style="margin-top: 56px;">
+      <p>Nigeria is also party to CEDAW, the Maputo Protocol, the CRC, and the ICCPR — all of which require states to safeguard women's reproductive autonomy.</p>
+      <div class="attr">International instruments · Binding</div>
+    </div>
+
+    <div class="audience-callout cso">
+      <strong>For CSO partners</strong>
+      Articles 16 and 18(3) are your <em>legal ground</em>. Combined with the RJIF ruling, you have a complete constitutional argument that does not require a single moral claim. Lead with it.
+    </div>
+    <div class="audience-callout team">
+      <strong>For the Pamoja team</strong>
+      Maintain ready-to-use briefs on each of these instruments. When journalists ask "where in Nigerian law does this come from", we should be able to answer in one sentence with a citation.
+    </div>
+    <div class="audience-callout creative">
+      <strong>For creative agencies</strong>
+      Avoid this section creatively. Rights language doesn't move general audiences — it equips advocates. Stay with human stories in public-facing work; reserve rights language for advocacy materials.
+    </div>
+  </div>
+</section>
+
+<!-- ============ SECTION 06: PATH FORWARD ============ -->
+<section id="path" class="cream">
+  <div class="container reveal">
+    <div class="kicker"><span>Part 06 — A Rights-Based Path Forward</span></div>
+    <h2>Six concrete actions <span class="ital">the National Assembly can take.</span></h2>
+    <p class="section-lede">The legislative reform agenda is not abstract. It is six specific, achievable actions that align Nigerian law with Nigerian policy, Nigerian courts, and Nigerian constitutional obligations.</p>
+
+    <div class="actions">
+      <div class="action">
+        <div class="num">01</div>
+        <p>Review and amend Sections 228–230 of the Criminal Code to expand lawful grounds for termination of pregnancy, including rape and incest.</p>
+      </div>
+      <div class="action">
+        <div class="num">02</div>
+        <p>Align laws with existing health policies and guidelines — particularly FMOH's safe termination protocols.</p>
+      </div>
+      <div class="action">
+        <div class="num">03</div>
+        <p>Protect healthcare workers through legal clarity, ending the climate of fear that undermines clinical decision-making.</p>
+      </div>
+      <div class="action">
+        <div class="num">04</div>
+        <p>Ensure safe abortion services are integrated into national health systems, not relegated to clandestine providers.</p>
+      </div>
+      <div class="action">
+        <div class="num">05</div>
+        <p>Clearly define lawful grounds for termination in line with judicial guidance, including circumstances involving sexual violence and threats to physical or mental health.</p>
+      </div>
+      <div class="action">
+        <div class="num">06</div>
+        <p>Uphold Nigeria's human rights obligations under the African Charter, CEDAW, the Maputo Protocol, the CRC and the ICCPR.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SECTION 07: NEW VISION ============ -->
+<section class="purple">
+  <div class="container reveal">
+    <div class="kicker"><span>Part 07 — A New Vision for Nigeria</span></div>
+    <h2 style="color: white;">A Nigeria where <span class="ital" style="color: var(--yellow);">—</span></h2>
+
+    <ul class="vision">
+      <li><span>No woman dies because she sought care.</span></li>
+      <li><span>No girl is forced into motherhood.</span></li>
+      <li><span>Gender equality is real — not aspirational.</span></li>
+      <li><span>Laws reflect science, compassion, and justice.</span></li>
+      <li><span>Public health policies are coherent and effective.</span></li>
+    </ul>
+
+    <p class="tagline" style="color: var(--yellow); margin-top: 56px;">This is not a radical vision. It is a necessary one. It is the path most African countries are already taking.</p>
+  </div>
+</section>
+
+<!-- ============ SECTION 08: CONCLUSION ============ -->
+<section id="conclusion" class="darker">
+  <div class="container reveal">
+    <div class="kicker"><span>Part 08 — Conclusion</span></div>
+    <h2>Legislators hold the pen <span class="ital">that can save lives.</span></h2>
+    <p class="section-lede">This is a decisive moment. The Senate's recent debates show that the conversation is shifting. The evidence is overwhelming. The lived experiences are heartbreaking. The human rights obligations are binding. The African examples are persuasive. The public health case is irrefutable.</p>
+
+    <div class="two-col" style="margin-top: 32px;">
+      <div>
+        <p style="font-size: 18px; color: white;">The criminalisation of abortion is not a moral stance — it is <strong>a policy choice with deadly consequences</strong>.</p>
+        <p>Reforming Nigeria's abortion laws is not about promoting abortion. It is about saving lives, protecting women, supporting families, strengthening the health system, and aligning the law with national priorities.</p>
+        <p style="font-family: var(--display); font-style: italic; font-size: 22px; color: var(--yellow); line-height: 1.4; margin-top: 28px;">Nigeria's daughters deserve better. Our mothers deserve better. Our nation deserves better.</p>
+      </div>
+      <div>
+        <div class="pullquote">
+          <p>The National Assembly now has both the opportunity and the constitutional obligation to bring Nigeria's laws into alignment with its courts, its policies, and its duty to protect life, dignity, and the integrity of its healthcare system.</p>
+          <div class="attr">What we ask · Pamoja</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Downloads -->
+    <div id="downloads" class="downloads">
+      <div>
+        <h3>Take this brief with you.</h3>
+        <p>Download the full strategic deck (19 slides, .pptx) — built on Pamoja brand, ready to present to partners, donors, and stakeholders.</p>
+      </div>
+      <a href="Pamoja_Advocacy_Brief_Deck.pptx" class="btn" download>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 3v14m0 0l-5-5m5 5l5-5M5 21h14"/></svg>
+        Download .pptx (19 slides)
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="container">
+    <div class="brand-block">
+      <svg viewBox="0 0 420 130" xmlns="http://www.w3.org/2000/svg" aria-label="Pamoja">
+        <g transform="translate(15,18)">
+          <path d="M 30 8 C 22 8, 16 14, 16 22 C 14 28, 16 34, 20 38 L 22 48 C 22 54, 26 58, 28 64 L 32 72 C 34 78, 36 82, 40 84 C 44 86, 48 84, 50 80 L 52 72 C 54 66, 54 60, 52 54 C 56 50, 58 44, 60 38 C 62 32, 60 26, 58 20 C 54 12, 46 8, 38 8 Z"
+                fill="none" stroke="#E62B67" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
+          <ellipse cx="60" cy="68" rx="3" ry="6.5" fill="none" stroke="#F8C501" stroke-width="2.8" transform="rotate(15 60 68)"/>
+          <path d="M 80 15 L 84 26 L 95 30 L 84 34 L 80 45 L 76 34 L 65 30 L 76 26 Z" fill="#E62B67"/>
+        </g>
+        <text x="125" y="85" font-family="DM Sans, sans-serif" font-weight="700" font-size="68" fill="#E62B67" letter-spacing="-2">Pamoja</text>
+      </svg>
+      <p>Civil Society Organisations Together to Make Abortion Safe in Africa. <em>Pamoja</em> means "together" in Swahili.</p>
+    </div>
+    <div>
+      <h5>Sections</h5>
+      <ul>
+        <li><a href="#crossroads">A Nation at a Crossroads</a></li>
+        <li><a href="#implications">Implications of Restrictive Laws</a></li>
+        <li><a href="#human-cost">The Human Cost</a></li>
+        <li><a href="#africa">The World Is Moving Forward</a></li>
+        <li><a href="#rights">Human Rights Obligations</a></li>
+        <li><a href="#path">A Rights-Based Path Forward</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Sources</h5>
+      <ul>
+        <li>Federal Ministry of Health, Nigeria</li>
+        <li>World Health Organisation</li>
+        <li>The Guardian Nigeria (2024)</li>
+        <li>ICIR Nigeria (2025)</li>
+        <li>Punch Newspapers (2023)</li>
+        <li>African Charter on Human and Peoples' Rights</li>
+      </ul>
+    </div>
+  </div>
+  <div class="legal">
+    <div>© 2026 Pamoja · Developed and produced by Pamoja partners</div>
+    <div>Brief version 1.0 · For coalition use</div>
+  </div>
+</footer>
+
+<script>
+  // Add js class for progressive enhancement
+  document.documentElement.classList.add('js');
+
+  // Audience filter
+  const body = document.body;
+  document.querySelectorAll('.audience-bar button').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.audience-bar button').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      body.dataset.audience = btn.dataset.aud;
+      // smooth: when switching audiences, scroll the next callout into view if relevant
+    });
+  });
+
+  // Reveal on scroll
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // When 'all' is selected, all callouts visible
+  const style = document.createElement('style');
+  style.textContent = `body[data-audience="all"] .audience-callout { display: block !important; }`;
+  document.head.appendChild(style);
+</script>
+
+</body>
+</html>
